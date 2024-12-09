@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css" />
+    <title>Chimpvine Quiz App</title>
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div id="question-container">
+            <h2 id="question">Question text</h2>
+            <div class="options-container">
+                <button class="option" onclick="selectAnswer(0)">Option 1</button>
+                <button class="option" onclick="selectAnswer(1)">Option 2</button>
+                <button class="option" onclick="selectAnswer(2)">Option 3</button>
+                <button class="option" onclick="selectAnswer(3)">Option 4</button>
+            </div>
+        </div>
+        <div class="navigation-container">
+            <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+    <div id="score-container" class="hidden">
+        <h2>Your Score: <span id="score"></span>/ <span id="total"></span></h2>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="assests/js/script.js "></script>
+</body>
+</html>
